@@ -1,7 +1,7 @@
 def args_printer(func):
     # TODO: fill this code
     # Use `print("func:", func.__name__, "args:", args, "kwargs:", kwargs)` to print arguments.
-
+    print("func:", func.__name__, "args:", args, "kwargs:", func.kwargs)
 
 @args_printer
 def func1(x, y):

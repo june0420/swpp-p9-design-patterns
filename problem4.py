@@ -7,11 +7,15 @@ class CompositeFunction(Function):
     def __init__(self, *functions):
         # TODO: fill this code
         # NOTE: `functions` is a tuple of arguments
+        self.funct = functions
 
     def __call__(self, value):
         # TODO: fill this code
         # HINT: `reversed(TUPLE)` returns a tuple in reversed order
-
+        result = value
+        for eachfunct in reversed(self.funct):
+            result = eachfunct(result)
+        return result
 
 class F(Function):
     def __call__(self, value):
