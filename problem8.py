@@ -4,10 +4,11 @@ class MatrixInfo:
         self._value = matrix
 
     #TODO: Return copy of _shape using decorator (Hint: @property)
+    @property
     def get_shape(self):
         return self._shape
     
-    #TODO: Prevent arbitrary setter of _shape using decorator
+    #TODO: Prevent e setter of _shape using decorator
 
 
 if __name__ == "__main__":
